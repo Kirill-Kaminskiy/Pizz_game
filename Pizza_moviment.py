@@ -11,7 +11,7 @@ class Pan(games.Sprite):
 
     def __init__(self):
         """Инициализация объектов Pan и создания объекта Text для отображения счёта"""
-        super(Pan, self).__init__(image=Pan.image, x = games.mouse.x, y = games.screen.height - 30,)  # вызов конструктора класса Sprite
+        super(Pan, self).__init__(image=Pan.image, x = games.mouse.x, y = games.screen.height - 30)  # вызов конструктора класса Sprite
         self.upds_message = games.Message(value="Скорость повышена!",
                                                      size=50,
                                                      color=color.red,
